@@ -1,0 +1,21 @@
+.dl-btn{
+    background:#D4A038;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:10px;
+    border:none;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    transition:all .3s ease;
+}
+
+.dl-btn:hover{
+    background:#bf902f;
+    color:#fff;
+    transform:translateY(-2px);
+}

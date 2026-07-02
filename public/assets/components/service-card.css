@@ -1,0 +1,31 @@
+.service-card{
+    background:#fff;
+    border-radius:18px;
+    border:1px solid #ececec;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+}
+
+.service-image img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:14px;
+    margin-bottom:18px;
+}
+
+.service-card h5{
+    font-size:16px;
+    font-weight:700;
+}
+
+.service-card p{
+    color:#6b7280;
+    font-size:13px;
+}
