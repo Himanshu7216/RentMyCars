@@ -1,37 +1,44 @@
-<section class="trip-banner-section">
+<style>
+    .trip-banner{
+    padding:80px 0 120px;
+}
+
+.trip-wrapper{
+    background:#f8f9fb;
+    border-radius:25px;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+</style>
+<section class="trip-banner">
 
     <div class="container">
 
-        <div class="trip-banner">
+        <div class="trip-wrapper">
 
-            <div class="row align-items-center">
+            <div class="trip-image">
+                SUV IMAGE
+            </div>
 
-                <div class="col-lg-3">
+            <div class="trip-content">
 
-                    <img src="{{ asset('assets/images/banner-suv.png') }}"
-                         class="img-fluid">
+                <h2>
+                    Planning a trip?
+                </h2>
 
-                </div>
+                <p>
+                    Check out our long drives and tour packages.
+                </p>
 
-                <div class="col-lg-6">
+            </div>
 
-                    <h2>
-                        Planning a trip?
-                    </h2>
+            <div class="trip-action">
 
-                    <p>
-                        Check out our Long Drives and Tour Packages.
-                    </p>
-
-                </div>
-
-                <div class="col-lg-3 text-end">
-
-                    <x-buttons.primary-button
-                        text="Explore Packages"
-                    />
-
-                </div>
+                <button>
+                    Explore Packages
+                </button>
 
             </div>
 

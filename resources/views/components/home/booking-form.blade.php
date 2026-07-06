@@ -1,68 +1,81 @@
-<div class="container booking-container">
+<div class="booking-form-wrapper">
 
-    <div class="booking-card">
+    <div class="booking-form-card">
 
-        <!-- Rental Type -->
-        <div class="booking-tabs">
+        <!-- Rental Type Tabs -->
+        <div class="booking-type-tabs">
 
-            <button class="booking-tab active">
-                <i class="bi bi-car-front"></i>
+            <button type="button" class="booking-tab active">
+                <i class="bi bi-steering-wheel"></i>
                 Self Drive
             </button>
 
-            <button class="booking-tab">
+            <button type="button" class="booking-tab">
                 <i class="bi bi-person-badge"></i>
                 With Driver
             </button>
 
         </div>
 
-        <form>
+        <!-- Booking Form -->
+        <form action="" class="booking-form">
 
-            <div class="row g-3 align-items-end">
+            <div class="booking-field location-field">
+                <label>Pick-up Location</label>
 
-                <div class="col-lg-3">
-                    <label>Pick-up Location</label>
+                <div class="input-wrapper">
+                    <i class="bi bi-geo-alt"></i>
 
-                    <select class="form-control booking-input">
-                        <option>Enter city or airport</option>
-                    </select>
+                    <input
+                        type="text"
+                        placeholder="Enter city or airport">
                 </div>
+            </div>
 
-                <div class="col-lg-2">
-                    <label>Pick-up Date</label>
+            <div class="booking-field">
+                <label>Pick-up Date</label>
 
-                    <input type="date"
-                           class="form-control booking-input">
+                <div class="input-wrapper">
+                    <i class="bi bi-calendar3"></i>
+
+                    <input type="date">
                 </div>
+            </div>
 
-                <div class="col-lg-2">
-                    <label>Pick-up Time</label>
+            <div class="booking-field small-field">
+                <label>&nbsp;</label>
 
-                    <input type="time"
-                           class="form-control booking-input">
+                <div class="input-wrapper">
+                    <i class="bi bi-clock"></i>
+
+                    <input type="time">
                 </div>
+            </div>
 
-                <div class="col-lg-2">
-                    <label>Return Date</label>
+            <div class="booking-field">
+                <label>Return Date</label>
 
-                    <input type="date"
-                           class="form-control booking-input">
+                <div class="input-wrapper">
+                    <i class="bi bi-calendar3"></i>
+
+                    <input type="date">
                 </div>
+            </div>
 
-                <div class="col-lg-2">
-                    <label>Return Time</label>
+            <div class="booking-field small-field">
+                <label>&nbsp;</label>
 
-                    <input type="time"
-                           class="form-control booking-input">
+                <div class="input-wrapper">
+                    <i class="bi bi-clock"></i>
+
+                    <input type="time">
                 </div>
+            </div>
 
-                <div class="col-lg-1">
-                    <button class="search-btn w-100">
-                        Search
-                    </button>
-                </div>
-
+            <div class="search-btn-wrapper">
+                <button class="search-btn">
+                    Search Cars
+                </button>
             </div>
 
         </form>

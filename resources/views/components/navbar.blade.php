@@ -5,9 +5,9 @@
 
             <!-- Logo -->
             <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-                <img src="{{ asset('assets/images/logo.png') }}"
+                <img src="{{ asset('assets/images/Drive_Lux_logo.png') }}"
                      alt="DriveLux"
-                     height="55">
+                     height="90">
 
             </a>
 

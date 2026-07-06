@@ -1,28 +1,27 @@
-<section class="section-padding pt-0">
+<section class="planning-section">
 
     <div class="container">
 
-        <div class="section-title text-center">
+        <h2>
+            What Are You Planning?
+        </h2>
 
-            <h2>What Are You Planning?</h2>
+        <div class="planning-grid">
 
-        </div>
+            {{-- @foreach($services as $service)
+                <x-cards.planning-card />
+            @endforeach --}}
+<div class="planning-card">
 
-        <div class="row g-4 mt-4">
+    <div class="planning-image">
+        <img src="" alt="">
+    </div>
 
-            @foreach($services as $service)
+    <h4>Long Drives</h4>
 
-                <div class="col-lg-2 col-md-4 col-6">
+    <p>Outstation Trips</p>
 
-                    @include(
-                        'components.cards.service-card',
-                        $service
-                    )
-
-                </div>
-
-            @endforeach
-
+</div>
         </div>
 
     </div>

@@ -3,8 +3,50 @@
 @import url('./components/brand-card.css');
 @import url('./components/service-card.css');
 @import url('./components/feature-card.css');
+@import url('./hero.css');
 
-*{
+
+:root{
+    --primary:#D4A038;
+    --primary-hover:#bf8d2b;
+    --dark:#111827;
+    --text:#6B7280;
+    --border:#E5E7EB;
+    --bg:#F8F9FB;
+    --white:#ffffff;
+
+    --radius-sm:12px;
+    --radius-md:18px;
+    --radius-lg:24px;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    --transition:.3s ease;
+}
+
+body{
+    background:#fff;
+    color:var(--dark);
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+.section-title{
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+img{
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -15,7 +57,7 @@ body{
     background:#f8f9fa;
     color:#1f2937;
 }
-
+ */
 
 
 
@@ -74,8 +116,8 @@ body{
     min-height:620px;
     display:flex;
     align-items:center;
-    overflow:hidden;
-    background:url('../images/hero-bg.jpg') center center/cover no-repeat;
+    /* overflow:hidden;
+    background:url('../images/hero-bg.jpg') center center/cover no-repeat; */
     padding:120px 0 140px;
 }
 

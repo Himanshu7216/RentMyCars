@@ -1,27 +1,26 @@
-<section class="section-padding">
+<style>
+    .why-section{
+    padding:70px 0;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+    margin-top:40px;
+}
+</style>
+<section class="why-section">
 
     <div class="container">
 
         <div class="section-title text-center">
-
-            <h2>Why Choose DriveLux?</h2>
-
+            Why Choose DriveLux?
         </div>
 
-        <div class="row g-4 mt-5">
+        <div class="why-grid">
 
-            @foreach($features as $feature)
-
-                <div class="col-lg-2 col-md-4 col-6">
-
-                    @include(
-                        'components.cards.feature-card',
-                        $feature
-                    )
-
-                </div>
-
-            @endforeach
+            <!-- Loop here -->
 
         </div>
 
