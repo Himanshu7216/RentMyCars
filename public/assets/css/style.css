@@ -136,7 +136,7 @@ body{
     font-size:68px;
     font-weight:800;
     line-height:1.1;
-    color:#111827;
+        color: #dedede;
 }
 
 .hero-content h1 span{
@@ -147,7 +147,7 @@ body{
 .hero-content p{
     margin-top:25px;
     font-size:22px;
-    color:#374151;
+    color: #fcfcfc;
     line-height:1.8;
     max-width:480px;
 }

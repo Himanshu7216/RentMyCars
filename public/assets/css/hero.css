@@ -4,7 +4,7 @@
 
 .hero-section{
     position: relative;
-    height: 820px;   /* 720 se 820 */
+    min-height:720px;   /* 720 se 820 */
     overflow: visible;
 }
 
@@ -49,11 +49,11 @@
 
 /* Left Content */
 .hero-content{
-    max-width: 550px;
+    max-width: 560px;
 }
 
 .hero-title{
-    font-size: 72px;
+    font-size: 68px;
     font-weight: 800;
     line-height: 1.1;
     color: #ffffff;

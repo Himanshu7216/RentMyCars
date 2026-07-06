@@ -18,7 +18,7 @@
         </div>
 
         <!-- Booking Form -->
-        <form action="" class="booking-form">
+        {{-- <form action="" class="booking-form">
 
             <div class="booking-field location-field">
                 <label>Pick-up Location</label>
@@ -78,8 +78,116 @@
                 </button>
             </div>
 
-        </form>
+        </form> --}}
+        <form action="#"  class="booking-form row g-3 align-items-end">
 
+    <!-- Location -->
+    <div class="col-xl-2 col-lg-3 col-md-6">
+    <div class="booking-field location-field">
+
+            <label>Pick-up Location</label>
+
+            <div class="input-wrapper">
+
+                <i class="bi bi-geo-alt"></i>
+
+                <input type="text" placeholder="Enter city or airport">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Pickup Date -->
+
+    <div class="col-xl-2 col-lg-3 col-md-6">
+    <div class="booking-field location-field">
+
+            <label>Pick-up Date</label>
+
+            <div class="input-wrapper">
+
+                <i class="bi bi-calendar3"></i>
+
+                <input type="date">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Pickup Time -->
+
+    <div class="col-xl-2 col-lg-3 col-md-6">
+    <div class="booking-field location-field">
+
+            <label>Time</label>
+
+            <div class="input-wrapper">
+
+                <i class="bi bi-clock"></i>
+
+                <input type="time">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Return Date -->
+
+    <div class="col-xl-2 col-lg-3 col-md-6">
+    <div class="booking-field location-field">
+
+            <label>Return Date</label>
+
+            <div class="input-wrapper">
+
+                <i class="bi bi-calendar3"></i>
+
+                <input type="date">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Return Time -->
+
+    <div class="col-xl-2 col-lg-3 col-md-6">
+    <div class="booking-field location-field">
+
+            <label>Time</label>
+
+            <div class="input-wrapper">
+
+                <i class="bi bi-clock"></i>
+
+                <input type="time">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="col-xl-2 col-lg-3 col-md-6">
+    <div class="booking-field location-field">
+
+            <button class="search-btn w-100">
+                Search Cars
+            </button>
+        </div>
+
+    </div>
+
+</form>
     </div>
 
 </div>

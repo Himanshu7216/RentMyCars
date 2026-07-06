@@ -1,0 +1,942 @@
+@import url('./components/button.css');
+@import url('./components/car-card.css');
+@import url('./components/brand-card.css');
+@import url('./components/service-card.css');
+@import url('./components/feature-card.css');
+/* @import url('./hero.css'); */
+
+
+:root{
+    --primary:#D4A038;
+    --primary-hover:#bf8d2b;
+    --dark:#111827;
+    --text:#6B7280;
+    --border:#E5E7EB;
+    --bg:#F8F9FB;
+    --white:#ffffff;
+
+    --radius-sm:12px;
+    --radius-md:18px;
+    --radius-lg:24px;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    --transition:.3s ease;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    padding: 0;
+    border-bottom:1px solid #f1f1f1;
+}
+
+.nav-link{
+    color:#1f2937;
+    font-weight:500;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#D4A038 !important;
+}
+
+.login-btn{
+    color:#1f2937;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register-btn{
+    background:#D4A038;
+    color:white;
+    padding:12px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+.login-btn:hover{
+    color:#bc8d2b;
+    transition:.3s;
+}
+.register-btn:hover{
+
+    color:#1f2937;
+    background:#bc8d2b;
+}
+/* =====================================================
+                    HERO SECTION
+===================================================== */
+
+.hero-section{
+    position: relative;
+    min-height: 720px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+}
+
+/* Background */
+
+.hero-bg{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    /* background: linear-gradient(
+        90deg,
+        rgba(255,255,255,.92) 0%,
+        rgba(255,255,255,.70) 35%,
+        rgba(255,255,255,.25) 65%,
+        rgba(255,255,255,.05) 100%
+    ); */
+}
+
+/* Container */
+
+.hero-container{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+
+/* Hero Content */
+
+.hero-content{
+    max-width: 560px;
+}
+
+.hero-title{
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #8a909e;
+    margin-bottom: 18px;
+}
+
+.hero-title span{
+    display: block;
+    color: #D4A038;
+}
+
+.hero-subtitle{
+    max-width: 480px;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #070a0e;
+}
+
+/* Hero Car */
+
+.hero-car-image{
+    position: absolute;
+    right: -50px;
+    bottom: 70px;
+    z-index: 5;
+}
+
+.hero-car{
+    width: 760px;
+    max-width: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* =====================================================
+                    HERO RESPONSIVE
+===================================================== */
+
+@media (max-width:1199px){
+
+    .hero-section{
+        min-height:680px;
+    }
+
+    .hero-title{
+        font-size:58px;
+    }
+
+    .hero-subtitle{
+        font-size:20px;
+    }
+
+    .hero-car{
+        width:620px;
+    }
+
+}
+
+@media (max-width:991px){
+
+    .hero-section{
+        min-height:620px;
+        text-align:center;
+    }
+
+    .hero-content{
+        max-width:100%;
+        margin:auto;
+    }
+
+    .hero-title{
+        font-size:50px;
+    }
+
+    .hero-subtitle{
+        max-width:650px;
+        margin:auto;
+        font-size:19px;
+    }
+
+    .hero-car-image{
+        display:none;
+    }
+
+    .hero-overlay{
+        background:rgba(0,0,0,.35);
+    }
+
+    .hero-title,
+    .hero-subtitle{
+        color:#fff;
+    }
+
+    .hero-title span{
+        color:#D4A038;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .hero-section{
+        min-height:560px;
+    }
+
+    .hero-title{
+        font-size:42px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
+        line-height:1.6;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .hero-section{
+        min-height:500px;
+    }
+
+    .hero-title{
+        font-size:34px;
+    }
+
+    .hero-subtitle{
+        font-size:16px;
+    }
+
+}
+
+
+/* ==========================================
+        BOOKING FORM
+========================================== */
+
+.booking-form-wrapper{
+    position: absolute;
+    left: 50%;
+    bottom: -115px;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 100;
+    padding: 0 15px;
+}
+
+.booking-form-card{
+    max-width: 1320px;
+    margin: auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 32px 35px;
+    margin-bottom: -10px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.08);
+    overflow: visible;
+}
+
+/* ==========================
+        Rental Tabs
+========================== */
+
+.booking-type-tabs{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.booking-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-width: 180px;
+    height: 64px;
+
+    border: none;
+    border-radius: 16px;
+
+    background: #F3F4F6;
+    color: #6B7280;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: .3s;
+    cursor: pointer;
+}
+
+.booking-tab i{
+    font-size:20px;
+}
+
+.booking-tab.active{
+    background:#fff;
+    color:#D4A038;
+    border:1px solid #D4A038;
+}
+
+.booking-tab:hover{
+    color:#D4A038;
+}
+
+/* ==========================
+        Booking Form
+========================== */
+
+.booking-form{
+    margin:0;
+}
+
+.booking-field{
+    width:100%;
+}
+
+/* .location-field{
+    flex:1.6;
+} */
+
+/* .small-field{
+    max-width:170px;
+} */
+
+.booking-field label{
+    display:block;
+    margin-bottom:12px;
+
+    font-size:15px;
+    font-weight:600;
+    color:#111827;
+}
+
+.input-wrapper{
+    display:flex;
+    align-items:center;
+
+    height:62px;
+
+    padding:0 18px;
+
+    border:1px solid #E5E7EB;
+    border-radius:14px;
+
+    background:#fff;
+
+    transition:.3s;
+}
+
+.input-wrapper:hover{
+    border-color:#D4A038;
+}
+
+.input-wrapper:focus-within{
+    border-color:#D4A038;
+    box-shadow:0 0 0 3px rgba(212,160,56,.12);
+}
+
+.input-wrapper i{
+    color:#6B7280;
+    font-size:18px;
+    margin-right:12px;
+}
+
+.input-wrapper input,
+.input-wrapper select{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+
+    font-size:15px;
+    color:#111827;
+}
+
+.input-wrapper input::placeholder{
+    color:#9CA3AF;
+}
+
+/* ==========================
+        Search Button
+========================== */
+
+/* .search-btn-wrapper{
+    width:180px;
+} */
+ .search-btn-wrapper{
+    width:100%;
+}
+
+.search-btn{
+    width:100%;
+    height:62px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#D4A038;
+    color:#fff;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.search-btn:hover{
+    background:#BF8D28;
+}
+
+
+/* ==========================================
+            BRANDS SECTION
+========================================== */
+
+.brands-section{
+    position: relative;
+    padding: 170px 0 80px;
+    background: #fff;
+}
+
+.brands-section .section-title{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Brand Grid */
+
+.brands-grid{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 18px;
+}
+
+/* Brand Card */
+
+.brand-card{
+    background: #fff;
+    border: 1px solid #ECECEC;
+    border-radius: 18px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.brand-card:hover{
+    transform: translateY(-6px);
+    border-color: #D4A038;
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+.brand-card img{
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.brand-card span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    text-align: center;
+}
+
+/* View All Card */
+
+.view-all-brand-card{
+    background: #fff;
+    border: 1px solid #ECECEC;
+    border-radius: 18px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.view-all-brand-card:hover{
+    background: #D4A038;
+    color: #fff;
+    border-color: #D4A038;
+}
+
+/* ==========================================
+        BRANDS RESPONSIVE
+========================================== */
+
+/* Large Laptop */
+
+@media (max-width: 1399px){
+
+    .brands-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+}
+
+/* Laptop */
+
+@media (max-width: 1199px){
+
+    .brands-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 991px){
+
+    .brands-section{
+        padding: 250px 0 70px;
+    }
+
+    .brands-grid{
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:767px){
+
+    .brands-section{
+        padding: 330px 0 60px;
+    }
+
+    .brands-section .section-title{
+        font-size:32px;
+    }
+
+    .brands-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap:16px;
+    }
+
+    .brand-card,
+    .view-all-brand-card{
+        height:110px;
+    }
+
+}
+
+/* Small Mobile */
+
+@media (max-width:575px){
+
+    .brands-section{
+        padding:360px 0 50px;
+    }
+
+    .brands-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap:14px;
+    }
+
+    .brand-card img{
+        width:45px;
+        height:45px;
+    }
+
+    .brand-card span{
+        font-size:13px;
+    }
+
+    .view-all-brand-card{
+        font-size:13px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer-section{
+    background:#111827;
+    color:white;
+    padding:80px 0 30px;
+}
+
+.footer-section h5{
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.footer-section ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-section ul li{
+    margin-bottom:15px;
+}
+
+.footer-section a{
+    color:#d1d5db;
+    text-decoration:none;
+}
+
+.footer-section a:hover{
+    color:#D4A038;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+
+.social-icons a{
+    width:42px;
+    height:42px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+
+.footer-divider{
+    margin:50px 0 25px;
+    border-color:rgba(255,255,255,.1);
+}
+
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* ===========================
+   Large Devices (≤ 1199px)
+=========================== */
+
+@media (max-width: 1199.98px){
+
+    .hero-title{
+        font-size:58px;
+    }
+
+    .hero-subtitle{
+        font-size:20px;
+        line-height:34px;
+    }
+
+    .booking-form-card{
+        max-width:95%;
+        padding:30px;
+    }
+
+    .booking-form{
+        gap:14px;
+    }
+
+    .location-field{
+        flex:1.4;
+    }
+
+    .search-btn-wrapper{
+        width:160px;
+    }
+
+    .brands-grid{
+        grid-template-columns:repeat(5,1fr);
+    }
+
+}
+
+
+/* ===========================
+   Tablet Devices (≤ 991px)
+=========================== */
+
+@media (max-width:991.98px){
+
+    .hero-section{
+        min-height:900px;
+    }
+
+    .hero-container{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero-content{
+        margin:auto;
+    }
+
+    .hero-title{
+        font-size:48px;
+    }
+
+    .hero-subtitle{
+        font-size:18px;
+        line-height:30px;
+        margin:auto;
+        margin-top:20px;
+    }
+
+    .booking-form-wrapper{
+        bottom:-260px;
+    }
+
+    .booking-form{
+        flex-wrap:wrap;
+        gap:18px;
+    }
+
+    .booking-field,
+    .location-field,
+    .small-field{
+        flex:0 0 calc(50% - 10px);
+        max-width:calc(50% - 10px);
+    }
+
+    .search-btn-wrapper{
+        width:100%;
+    }
+
+    .search-btn{
+        width:100%;
+    }
+
+    .brands-section{
+        padding-top:320px;
+    }
+
+    .brands-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+
+
+/* ===========================
+   Mobile Devices (≤ 767px)
+=========================== */
+
+@media (max-width:767.98px){
+
+    .hero-section{
+        min-height:1080px;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero-title{
+        font-size:40px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
+        line-height:28px;
+    }
+
+    .booking-form-wrapper{
+        bottom:-430px;
+        padding:0 15px;
+    }
+
+    .booking-form-card{
+        padding:22px;
+        border-radius:20px;
+    }
+
+    .booking-type-tabs{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .booking-tab{
+        width:100%;
+        justify-content:center;
+    }
+
+    .booking-field,
+    .location-field,
+    .small-field{
+        flex:0 0 100%;
+        max-width:100%;
+    }
+
+    .search-btn-wrapper{
+        width:100%;
+    }
+
+    .brands-section{
+        padding-top:520px;
+    }
+
+    .brands-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+}
+
+
+/* ===========================
+   Small Mobile (≤ 575px)
+=========================== */
+
+@media (max-width:575.98px){
+
+    .hero-section{
+        min-height:1120px;
+    }
+
+    .hero-title{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .hero-subtitle{
+        font-size:16px;
+        line-height:26px;
+    }
+
+    .booking-form-wrapper{
+        bottom:-450px;
+    }
+
+    .booking-form-card{
+        padding:18px;
+    }
+
+    .booking-tab{
+        height:56px;
+        font-size:16px;
+    }
+
+    .booking-field label{
+        font-size:14px;
+    }
+
+    .input-wrapper{
+        height:56px;
+    }
+
+    .input-wrapper input{
+        font-size:14px;
+    }
+
+    .search-btn{
+        height:56px;
+        font-size:16px;
+    }
+
+    .brands-section{
+        padding-top:540px;
+    }
+
+    .brands-grid{
+        grid-template-columns:1fr;
+    }
+
+    .brand-card,
+    .view-all-brand-card{
+        height:100px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+}

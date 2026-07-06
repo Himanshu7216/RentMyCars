@@ -6,51 +6,77 @@
             All Major Brands
         </h2>
 
-        <div class="brands-grid">
+        <div class="row g-4 justify-content-center">
 
-            <div class="brand-card">
-                <img src="assets/images/brands/bmw.png" alt="">
+            <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
+<div class="brand-card">
+                <img src="{{ asset('./assets/images/BMW_logo.png') }}" alt="">
                 <span>BMW</span>
             </div>
-
-            <div class="brand-card">
-                <img src="assets/images/brands/mercedes.png" alt="">
-                <span>Mercedes Benz</span>
             </div>
 
-            <div class="brand-card">
-                <img src="assets/images/brands/audi.png" alt="">
-                <span>Audi</span>
-            </div>
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
 
-            <div class="brand-card">
-                <img src="assets/images/brands/toyota.png" alt="">
-                <span>Toyota</span>
-            </div>
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/Mercedes-Logo.png') }}" alt="">
+        <span>Mercedes Benz</span>
+    </div>
+</div>
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
 
-            <div class="brand-card">
-                <img src="assets/images/brands/land-rover.png" alt="">
-                <span>Land Rover</span>
-            </div>
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/Audi-Logo-Banner.png') }}" alt="">
+        <span>Audi</span>
+    </div>
+</div>
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
 
-            <div class="brand-card">
-                <img src="assets/images/brands/porsche.png" alt="">
-                <span>Porsche</span>
-            </div>
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/Toyota-logo.png') }}" alt="">
+        <span>Toyota</span>
+    </div>
+</div>
 
-            <div class="brand-card">
-                <img src="assets/images/brands/honda.png" alt="">
-                <span>Honda</span>
-            </div>
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
 
-            <div class="brand-card">
-                <img src="assets/images/brands/volkswagen.png" alt="">
-                <span>Volkswagen</span>
-            </div>
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/Land-Rover-Logo.jpg') }}" alt="">
+        <span>Land Rover</span>
+    </div>
+</div>
 
-            <div class="view-all-brand-card">
-                View All Brands
-            </div>
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
+
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/porsche-logo.jpg') }}" alt="">
+        <span>Porsche</span>
+    </div>
+</div>
+
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
+
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/honda-logo.png') }}" alt="">
+        <span>Honda</span>
+    </div>
+</div>
+
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
+
+    <div class="brand-card">
+        <img src="{{ asset('./assets/images/ford-logo.png') }}" alt="">
+        <span>Ford</span>
+    </div>
+</div>
+<div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
+
+    <div class="view-all-brand-card">
+
+        View All Brands
+
+    </div>
+
+</div>
 
         </div>
 

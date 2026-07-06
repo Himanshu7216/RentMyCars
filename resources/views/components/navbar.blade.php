@@ -1,6 +1,6 @@
 <header class="navbar-wrapper shadow-sm">
 
-    <nav class="navbar navbar-expand-lg bg-white py-3">
+    <nav class="navbar navbar-expand-lg bg-white ">
         <div class="container">
 
             <!-- Logo -->
