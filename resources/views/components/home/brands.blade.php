@@ -48,8 +48,8 @@
 <div class="col-xl col-lg-2 col-md-3 col-sm-4 col-6">
 
     <div class="brand-card">
-        <img src="{{ asset('./assets/images/porsche-logo.jpg') }}" alt="">
-        <span>Porsche</span>
+        <img src="{{ asset('./assets/images/kia-logo.jpg') }}" alt="">
+        <span>KIA</span>
     </div>
 </div>
 

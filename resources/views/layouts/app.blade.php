@@ -36,9 +36,13 @@
 
 @include('components.home.brands')
 
-{{-- @include('components.home.planning') --}}
+@include('components.home.planning')
 
-{{-- @include('components.home.featured-cars') --}}
+@include('components.home.featured-cars')
+
+@include('components.home.why-choose')
+
+@include('components.home.trip-banner')
     </main>
 
     {{-- Footer --}}

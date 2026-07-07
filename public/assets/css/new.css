@@ -622,6 +622,149 @@
 }
 
 
+/*==================================
+        PLANNING SECTION
+===================================*/
+
+.planning-section{
+    padding:30px 0 80px;
+}
+
+.planning-section .section-title{
+    margin-bottom:45px;
+}
+
+.planning-card{
+
+    background:#fff;
+
+    border:1px solid #ECECEC;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+    height:100%;
+}
+
+.planning-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.planning-image{
+
+    height:110px;
+
+    overflow:hidden;
+
+    border-radius:16px 16px 0 0;
+
+    background:#F5F7FA;
+
+}
+
+.planning-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.35s;
+
+}
+
+.planning-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.planning-card h4{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin:18px 0 6px;
+
+}
+
+.planning-card p{
+
+    font-size:13px;
+
+    color:#6B7280;
+
+    margin-bottom:18px;
+
+}
+
+
+@media (max-width:991px){
+
+    .planning-image{
+        height:95px;
+    }
+
+    .planning-card h4{
+        font-size:16px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .planning-section{
+        padding:20px 0 60px;
+    }
+
+    .planning-image{
+        height:90px;
+    }
+
+    .planning-card{
+        border-radius:16px;
+    }
+
+    .planning-card h4{
+        font-size:15px;
+    }
+
+    .planning-card p{
+        font-size:12px;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .planning-image{
+        height:80px;
+    }
+
+    .planning-card h4{
+        font-size:14px;
+    }
+
+    .planning-card p{
+        font-size:11px;
+    }
+
+}
 
 
 
@@ -629,11 +772,511 @@
 
 
 
+/*=====================================
+        FEATURED CARS
+======================================*/
+
+.featured-section{
+    padding:70px 0;
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.section-title-left{
+    font-size:38px;
+    font-weight:700;
+    color:#111827;
+    margin:0;
+}
+
+.view-all-btn{
+    padding:12px 22px;
+    border:1px solid #E5E7EB;
+    border-radius:12px;
+    color:#111827;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+    background:#fff;
+}
+
+.view-all-btn:hover{
+    background:#D4A038;
+    color:#fff;
+    border-color:#D4A038;
+}
+
+.car-card{
+    background:#fff;
+    border:1px solid #ECECEC;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    height:100%;
+}
+
+.car-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.car-image{
+    background:#F8F9FB;
+    height:205px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.car-image img{
+    width:95%;
+    transition:.4s;
+}
+
+.car-card:hover .car-image img{
+    transform:scale(1.05);
+}
+
+.car-body{
+    padding:18px;
+}
+
+.car-body h4{
+    font-size:18px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:12px;
+}
+
+.price{
+    font-size:24px;
+    font-weight:700;
+    color:#111827;
+}
+
+.price span{
+    font-size:14px;
+    color:#6B7280;
+    font-weight:500;
+}
+
+.car-features{
+    display:flex;
+    justify-content:space-between;
+    margin:18px 0;
+    padding-bottom:18px;
+    border-bottom:1px solid #ECECEC;
+}
+
+.car-features span{
+    font-size:13px;
+    color:#6B7280;
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.car-features i{
+    color:#9CA3AF;
+}
+
+.details-btn{
+    display:block;
+    width:100%;
+    height:46px;
+    line-height:46px;
+    text-align:center;
+    border:1px solid #E5E7EB;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    color:#111827;
+    transition:.3s;
+}
+
+.details-btn:hover{
+    background:#D4A038;
+    color:#fff;
+    border-color:#D4A038;
+}
 
 
+@media (max-width:991px){
+
+    .section-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+    }
+
+    .section-title-left{
+        font-size:32px;
+    }
+
+    .car-image{
+        height:180px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .featured-section{
+        padding:50px 0;
+    }
+
+    .section-title-left{
+        font-size:28px;
+    }
+
+    .car-image{
+        height:170px;
+    }
+
+    .car-body{
+        padding:15px;
+    }
+
+    .car-body h4{
+        font-size:17px;
+    }
+
+    .price{
+        font-size:22px;
+    }
+
+    .car-features{
+        flex-wrap:wrap;
+        gap:10px;
+        justify-content:flex-start;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .section-header{
+        align-items:center;
+        text-align:center;
+    }
+
+    .view-all-btn{
+        width:100%;
+    }
+
+}
 
 
+/*=====================================
+        WHY CHOOSE US
+======================================*/
 
+.why-section{
+    padding:70px 0 50px;
+}
+
+.why-card{
+
+    background:#fff;
+    border:1px solid #ECECEC;
+    border-radius:18px;
+    padding:28px 22px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.why-icon{
+
+    width:65px;
+    height:65px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#F9FAFB;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:20px;
+
+}
+
+.why-icon i{
+
+    font-size:30px;
+
+    color:#374151;
+
+}
+
+.why-card h5{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:12px;
+
+    line-height:1.4;
+
+}
+
+.why-card p{
+
+    font-size:14px;
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+/*=====================================
+        TRIP BANNER
+======================================*/
+
+.trip-banner{
+
+    padding:20px 0 90px;
+
+}
+
+.trip-wrapper{
+
+    background:#F9FAFB;
+
+    border:1px solid #ECECEC;
+
+    border-radius:22px;
+
+    padding:22px 40px;
+
+    overflow:hidden;
+
+}
+
+.trip-image{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+}
+
+.trip-image img{
+
+    width:300px;
+
+    transition:.35s;
+
+}
+
+.trip-wrapper:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.trip-content h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+.trip-content p{
+
+    color:#6B7280;
+
+    font-size:16px;
+
+    margin:0;
+
+}
+
+.trip-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 32px;
+
+    background:#D4A038;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.trip-btn:hover{
+
+    background:#bf8d28;
+
+    color:#fff;
+
+}
+
+
+@media (max-width:991px){
+
+    .why-section{
+
+        padding:60px 0 40px;
+
+    }
+
+    .trip-wrapper{
+
+        padding:35px;
+
+        text-align:center;
+
+    }
+
+    .trip-image{
+
+        justify-content:center;
+
+        margin-bottom:25px;
+
+    }
+
+    .trip-image img{
+
+        width:260px;
+
+    }
+
+    .trip-content{
+
+        margin-bottom:25px;
+
+    }
+
+    .trip-content h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+@media (max-width:767px){
+
+    .why-card{
+
+        padding:25px 18px;
+
+    }
+
+    .trip-wrapper{
+
+        padding:30px 20px;
+
+    }
+
+    .trip-image img{
+
+        width:220px;
+
+    }
+
+    .trip-content h2{
+
+        font-size:26px;
+
+    }
+
+    .trip-content p{
+
+        font-size:15px;
+
+    }
+
+    .trip-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:575px){
+
+    .why-section{
+
+        padding:50px 0 30px;
+
+    }
+
+    .why-icon{
+
+        width:55px;
+        height:55px;
+
+    }
+
+    .why-icon i{
+
+        font-size:24px;
+
+    }
+
+    .trip-image img{
+
+        width:180px;
+
+    }
+
+    .trip-content h2{
+
+        font-size:22px;
+
+    }
+
+}
 
 
 

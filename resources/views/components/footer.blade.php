@@ -6,7 +6,7 @@
 
             <div class="col-lg-4">
 
-                <img src="{{ asset('assets/images/logo-white.png') }}"
+                <img src="{{ asset('assets/images/DriveLux_logo_footer.png') }}"
                      height="55"
                      class="mb-4">
 
@@ -59,7 +59,7 @@
                 <ul>
                     <li>
                         <i class="bi bi-telephone"></i>
-                        +91 9876543210
+                        +91 6351879011
                     </li>
 
                     <li>
@@ -69,7 +69,7 @@
 
                     <li>
                         <i class="bi bi-geo-alt"></i>
-                        Mumbai, India
+                        Ahemdabad, Gujarat, India
                     </li>
                 </ul>
 
